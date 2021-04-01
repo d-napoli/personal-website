@@ -1,0 +1,80 @@
+{
+    "languages": {
+        "pt": {
+            "header": {
+                "introduction": {
+                    "tag": "Desenvolvedor",
+                    "main_phrase": "Olá, sou o",
+                    "main_description": "É um prazer te conhecer! Tenho $$AGE$$ anos de idade.",
+                    "last_description": "Lorem Ipsum dolor sit amet, consectetur adipiscing elit.",
+                    "english": "Inglês",
+                    "portuguese": "Português",
+                    "change": "Alterar",
+                    "location": "Belo Horizonte, Minas Gerais, Brasil"
+                }
+            },
+            "sections": {
+                "skills": {
+                    "title": "HABILIDADES",
+                    "description": "Melhores habilidades",
+                    "completeDescription": "Algumas das habilidades e linguagens de programação que tenho mais conhecimento",
+                    "years_experience": "anos de experiência",
+                    "programing_languages": {
+                        "Python": "Anos de experiência trabalhando com python, simplesmente amo essa linguagem de programação.",
+                        "SQL": "Anos de experiência trabalhando com python, simplesmente amo essa linguagem de programação.",
+                        "HTML": "Anos de experiência trabalhando com python, simplesmente amo essa linguagem de programação.",
+                        "CSS": "Anos de experiência trabalhando com python, simplesmente amo essa linguagem de programação.",
+                        "Node.JS": "Anos de experiência trabalhando com python, simplesmente amo essa linguagem de programação.",
+                        "React": "Anos de experiência trabalhando com python, simplesmente amo essa linguagem de programação."
+                    }
+                },
+                "professional_experience": {
+                    "title": "EXPERIÊNCIA",
+                    "description": "Experiência profissional",
+                    "completeDescription": "Essa é a minha história trabalhando com TI"
+                }
+            },
+            "footer": {
+                "description": "Esse site foi desenvolvido usando React.Js - Diego Napoli $$YEAR$$"
+            }
+        },
+        "en": {
+            "header": {
+                "introduction": {
+                    "tag": "Developer",
+                    "main_phrase": "Hey, I'm",
+                    "main_description": "Nice to meet you! I'm currently $$AGE$$ years old.",
+                    "last_description": "Lorem Ipsum dolor sit amet, consectetur adipiscing elit.",
+                    "english": "English",
+                    "portuguese": "Portuguese",
+                    "change": "Change",
+                    "location": "Belo Horizonte, Minas Gerais, Brazil"
+                }
+            },
+            "sections": {
+                "skills": {
+                    "title": "SKILLS",
+                    "description": "My top skills",
+                    "completeDescription": "Some of the habilities and coding languages that I have more knoledge",
+                    "years_experience": "years experience",
+                    "programing_languages": {
+                        "Python": "A lot of years working on Python. I just simply love this coding language.",
+                        "SQL": "A lot of years working on Python. I just simply love this coding language.",
+                        "HTML": "A lot of years working on Python. I just simply love this coding language.",
+                        "CSS": "A lot of years working on Python. I just simply love this coding language.",
+                        "Node.JS": "A lot of years working on Python. I just simply love this coding language.",
+                        "React": "A lot of years working on Python. I just simply love this coding language."
+                    }
+                },
+                "professional_experience": {
+                    "title": "EXPERIENCE",
+                    "description": "Professional Experience",
+                    "completeDescription": "That's my history working with IT"
+                }
+            },
+            "footer": {
+                "description": "This website was made using React.Js - Diego Napoli $$YEAR$$"
+            }
+        }
+    }
+}
