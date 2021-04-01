@@ -20,6 +20,8 @@ import ProfileImageUrl from '../../assets/images/Profile/Hackathon-Espirito-Sant
 import Icon from '../Icon'
 import { ICONS } from '../../constants/icons'
 
+import Button from '../Button'
+
 function Header(props) {
     const [age, changeAge] = useState(0)
 
@@ -88,6 +90,11 @@ function Header(props) {
                                 size="30"
                             />
                         </IconWrapper>
+                        <Button
+                            icon={ICONS.DOWNLOAD}
+                            text={props.lang[props.selectedLanguage]['header']['introduction']['curriculum']}
+                            passou="Sim"
+                        />
                     </Row>
                 </Column>
                 <Column>
