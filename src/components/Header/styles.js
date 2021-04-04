@@ -1,9 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    padding: 40px 400px 70px 400px;
-    /* background: var(--tertiary); */
-
+    padding: var(--vertical__padding) var(--horizontal__padding);
     background-image: linear-gradient(229deg, var(--secondary), var(--tertiary));
 `;
 
@@ -12,6 +10,10 @@ export const Column = styled.div`
     flex-direction: column;
     flex-basis: 100%;
     flex: 1;
+
+    @media screen and (max-width: 480px) {
+        display: contents;
+    }
 `;
 
 export const Row = styled.div`
@@ -36,7 +38,7 @@ export const Tag = styled.div`
 
 export const Title = styled.h1`
     font-size: 3.2em;
-    width: 60%;
+    width: var(--width);
     font-weight: lighter;
 
     margin-bottom: 20px;
@@ -48,7 +50,7 @@ export const PrimaryColor = styled.span`
 `;
 
 export const MainDesc = styled.h3`
-    width: 60%;
+    width: var(--width);
 
     line-height: 25px;
     margin-bottom: 20px;
@@ -62,8 +64,12 @@ export const SecondDesc = styled.h5`
 `;
 
 export const ProfileImage = styled.img`
-    width: 50%;
+    width: 300px;
     margin: 0 auto;
+
+    @media screen and (max-width: 480px) {
+        display: none;
+    }
 `;
 
 export const LanguageWrapper = styled.div`
@@ -83,4 +89,11 @@ export const IconWrapper = styled.a`
         transition: 0.3s ease 0s all;
         cursor: pointer;
     }
+`;
+
+export const BackgroundHeader = styled.img`
+    width: 500px;
+    position: absolute;
+    right: 300px;
+    z-index: 0;
 `;

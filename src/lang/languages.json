@@ -21,7 +21,7 @@
                     "completeDescription": "Algumas das habilidades e linguagens de programação que tenho mais conhecimento",
                     "years_experience": "anos de experiência",
                     "programing_languages": {
-                        "Python": "Anos de experiência trabalhando com python, simplesmente amo essa linguagem de programação.",
+                        "Python": "Diversos projetos em Python desenvolvidos, voltados para automação de processos e análise de dados",
                         "SQL": "Anos de experiência trabalhando com python, simplesmente amo essa linguagem de programação.",
                         "HTML": "Anos de experiência trabalhando com python, simplesmente amo essa linguagem de programação.",
                         "CSS": "Anos de experiência trabalhando com python, simplesmente amo essa linguagem de programação.",
@@ -33,6 +33,12 @@
                     "title": "EXPERIÊNCIA",
                     "description": "Experiência profissional",
                     "completeDescription": "Essa é a minha história trabalhando com TI"
+                },
+                "latest_projects": {
+                    "title": "PROJETOS",
+                    "description": "Meus projetos mais recentes",
+                    "completeDescription": "Os dados abaixo estão vindo da API do Github",
+                    "action_button": "Projeto no Github"
                 }
             },
             "footer": {
@@ -60,7 +66,7 @@
                     "completeDescription": "Some of the habilities and coding languages that I have more knoledge",
                     "years_experience": "years experience",
                     "programing_languages": {
-                        "Python": "A lot of years working on Python. I just simply love this coding language.",
+                        "Python": "A lot of Python projects developed to do processes automation and data analyses",
                         "SQL": "A lot of years working on Python. I just simply love this coding language.",
                         "HTML": "A lot of years working on Python. I just simply love this coding language.",
                         "CSS": "A lot of years working on Python. I just simply love this coding language.",
@@ -72,6 +78,12 @@
                     "title": "EXPERIENCE",
                     "description": "Professional Experience",
                     "completeDescription": "That's my history working with IT"
+                },
+                "latest_projects": {
+                    "title": "PROJECTS",
+                    "description": "My Latest Projects",
+                    "completeDescription": "The info below is being retrieved by Github API.",
+                    "action_button": "Checkout on Github"
                 }
             },
             "footer": {

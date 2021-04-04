@@ -11,7 +11,8 @@ import {
     SecondDesc,
     ProfileImage,
     LanguageWrapper,
-    IconWrapper
+    IconWrapper,
+    BackgroundHeader
 } from './styles'
 
 import LanguageToggle from '../LanguageToggle'
@@ -21,6 +22,9 @@ import Icon from '../Icon'
 import { ICONS } from '../../constants/icons'
 
 import Button from '../Button'
+import CodingTemplate from '../CodingTemplate'
+
+import { Wave } from '../../constants/images'
 
 function Header(props) {
     const [age, changeAge] = useState(0)
@@ -43,6 +47,9 @@ function Header(props) {
 
     return (
         <Container>
+            <BackgroundHeader
+                src={Wave}
+            />
             <Row>
                 <Column>
                     <LanguageWrapper>
@@ -60,7 +67,6 @@ function Header(props) {
                     <Tag>{props.lang[props.selectedLanguage]['header']['introduction']['tag']}</Tag>
                     <Title>{props.lang[props.selectedLanguage]['header']['introduction']['main_phrase']} <PrimaryColor>Diego Napoli</PrimaryColor></Title>
                     <MainDesc>{props.lang[props.selectedLanguage]['header']['introduction']['main_description'].replace("$$AGE$$", age)}</MainDesc>
-                    {/* <SecondDesc>{props.lang[props.selectedLanguage]['header']['introduction']['last_description']}</SecondDesc> */}
                     <SecondDesc>
                         <Icon
                             icon={ICONS.LOCATION}
@@ -98,7 +104,8 @@ function Header(props) {
                     </Row>
                 </Column>
                 <Column>
-                    <ProfileImage src={ProfileImageUrl} />
+                    <CodingTemplate />
+                    {/* <ProfileImage src={ProfileImageUrl} /> */}
                 </Column>
             </Row>
             {/* Social Icons */}

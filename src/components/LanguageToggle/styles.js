@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.div`
     display: flex;
     align-items: center;
+    z-index: 100;
 `;
 
 export const FlagIcon = styled.img`

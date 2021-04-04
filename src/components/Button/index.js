@@ -11,6 +11,7 @@ function Button(props) {
     return (
         <Container>
             <Btn
+                fill={props.fill}
                 onClick={props.click}
             >
                 {

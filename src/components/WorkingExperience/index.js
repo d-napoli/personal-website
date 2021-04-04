@@ -2,7 +2,7 @@ import React from 'react'
 
 import NewSection from '../NewSection'
 
-import { Vale, Fastway } from '../../constants/images'
+import { Vale, Fastway, Attest } from '../../constants/images'
 
 import {
     Container,
@@ -29,6 +29,12 @@ function WorkingExperience(props) {
                 <Column>
                     <CompanyImage
                         src={Fastway}
+                        alt="Agência Fastway"
+                    />
+                </Column>
+                <Column>
+                    <CompanyImage
+                        src={Attest}
                         alt="Agência Fastway"
                     />
                 </Column>
