@@ -92,6 +92,12 @@ export const IconWrapper = styled.a`
 `;
 
 export const BackgroundHeader = styled.img`
+
+    @media screen and (max-width: 480px) {
+        width: 300px;
+        right: 10px;
+    }
+
     width: 500px;
     position: absolute;
     right: 300px;

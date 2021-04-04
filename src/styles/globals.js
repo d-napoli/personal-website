@@ -11,7 +11,8 @@ export default createGlobalStyle`
         --secondary: #1B1E32;
         --secondary_light: #222640;
         --tertiary: #141628;
-        --dark_gray: #1d1e22;
+        /* --dark_gray: #1d1e22; */
+        --dark_gray: #282a36;
     }
 
     /* width */
@@ -36,10 +37,10 @@ export default createGlobalStyle`
 
     @media screen and (min-width: 1280px) {
         :root {
-            --horizontal__padding: 400px;
+            --horizontal__padding: 25%;
             --vertical__padding: 40px;
             --grid__flex__direction: column;
-            --width: 60%;
+            --width: 80%;
         }
     }
     
@@ -48,7 +49,7 @@ export default createGlobalStyle`
             --horizontal__padding: 150px;
             --vertical__padding: 40px;
             --grid__flex__direction: column;
-            --width: 65%;
+            --width: 80%;
         }
     }
 

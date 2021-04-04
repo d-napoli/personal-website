@@ -12,6 +12,17 @@
                     "change": "Alterar",
                     "location": "Belo Horizonte, Minas Gerais, Brasil",
                     "curriculum": "Baixar currículo"
+                },
+                "coding": {
+                    "python": {
+                        "person": "Pessoa",
+                        "me": "eu",
+                        "Alive": "Vivo",
+                        "WakeUp": "Acordar",
+                        "Eat": "Comer",
+                        "DoCode": "Codar",
+                        "Sleep": "Dormir"
+                    }
                 }
             },
             "sections": {
@@ -57,6 +68,17 @@
                     "change": "Change",
                     "location": "Belo Horizonte, Minas Gerais, Brazil",
                     "curriculum": "Download resume"
+                },
+                "coding": {
+                    "python": {
+                        "person": "Person",
+                        "me": "me",
+                        "Alive": "Alive",
+                        "WakeUp": "WakeUp",
+                        "Eat": "Eat",
+                        "DoCode": "DoCode",
+                        "Sleep": "Sleep"
+                    }
                 }
             },
             "sections": {

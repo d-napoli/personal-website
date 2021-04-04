@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { LazyLoadComponent } from 'react-lazy-load-image-component';
 
 import {
     Container,
@@ -17,13 +18,11 @@ import {
 
 import LanguageToggle from '../LanguageToggle'
 import ProfileImageUrl from '../../assets/images/Profile/Hackathon-Espirito-Santo.png'
-
 import Icon from '../Icon'
-import { ICONS } from '../../constants/icons'
-
 import Button from '../Button'
 import CodingTemplate from '../CodingTemplate'
 
+import { ICONS } from '../../constants/icons'
 import { Wave } from '../../constants/images'
 
 function Header(props) {
@@ -47,9 +46,11 @@ function Header(props) {
 
     return (
         <Container>
-            <BackgroundHeader
-                src={Wave}
-            />
+            <LazyLoadComponent>
+                <BackgroundHeader
+                    src={Wave}
+                />
+            </LazyLoadComponent>
             <Row>
                 <Column>
                     <LanguageWrapper>
@@ -104,7 +105,13 @@ function Header(props) {
                     </Row>
                 </Column>
                 <Column>
-                    <CodingTemplate />
+                    <LazyLoadComponent>
+                        <CodingTemplate
+                            age={age}
+                            selectedLanguage={props.selectedLanguage}
+                            lang={props.lang}
+                        />
+                    </LazyLoadComponent>
                     {/* <ProfileImage src={ProfileImageUrl} /> */}
                 </Column>
             </Row>
