@@ -35,7 +35,16 @@ export default createGlobalStyle`
         background: var(--primary_hover);
     }
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1280px) and (max-width: 1500px) {
+        :root {
+            --horizontal__padding: 15%;
+            --vertical__padding: 40px;
+            --grid__flex__direction: column;
+            --width: 80%;
+        }
+    }
+
+    @media screen and (min-width: 1501px) {
         :root {
             --horizontal__padding: 25%;
             --vertical__padding: 40px;

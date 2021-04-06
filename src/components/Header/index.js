@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { LazyLoadComponent } from 'react-lazy-load-image-component';
+import { Link, animateScroll as scroll } from "react-scroll";
 
 import {
     Container,
@@ -13,7 +14,9 @@ import {
     ProfileImage,
     LanguageWrapper,
     IconWrapper,
-    BackgroundHeader
+    BackgroundHeader,
+    BackToTop,
+    BackToTopWrapper
 } from './styles'
 
 import LanguageToggle from '../LanguageToggle'
@@ -27,9 +30,11 @@ import { Wave } from '../../constants/images'
 
 function Header(props) {
     const [age, changeAge] = useState(0)
+    const [backToTop, changeBackToTop] = useState(false)
 
     useEffect(() => {
         calculate_age()
+        window.onscroll = () => handleScroll()
     }, [])
 
     function calculate_age() {
@@ -44,8 +49,33 @@ function Header(props) {
         changeAge(age_now)
     }
 
+    function handleScroll() {
+        if(document.documentElement.scrollTop > 300) {
+            changeBackToTop(true)
+        } else {
+            changeBackToTop(false)
+        }
+    }
+
     return (
-        <Container>
+        <Container id="header">
+            {
+                backToTop ? 
+                <Link
+                    to='header'
+                    smooth={true}
+                    offset={-70}
+                    duration={300}
+                >
+                    <BackToTopWrapper>
+                        <BackToTop>
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="3em" width="3em" xmlns="http://www.w3.org/2000/svg"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path></svg>
+                        </BackToTop>
+                    </BackToTopWrapper>
+                </Link>
+                : ""
+            }
+
             <LazyLoadComponent>
                 <BackgroundHeader
                     src={Wave}

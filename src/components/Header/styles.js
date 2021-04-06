@@ -14,6 +14,8 @@ export const Column = styled.div`
     @media screen and (max-width: 480px) {
         display: contents;
     }
+
+    /* z-index: 5; */
 `;
 
 export const Row = styled.div`
@@ -102,4 +104,34 @@ export const BackgroundHeader = styled.img`
     position: absolute;
     right: 300px;
     z-index: 0;
+`;
+
+export const BackToTopWrapper = styled.div`
+
+`;
+
+export const BackToTop = styled.div`
+    background-color: var(--primary);
+    
+    width: 20px;
+
+    padding: 0px 20px;
+
+    opacity: .6;
+
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+
+    &:hover {
+        opacity: 1;
+        cursor: pointer;
+        transition: 0.3s ease 0s all;
+    }
 `;
