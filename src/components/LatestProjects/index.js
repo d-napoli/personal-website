@@ -24,21 +24,8 @@ function LatestProjects(props) {
             .then(res => res.json())
             .then(
                 (result) => {
-                    console.log(result)
                     setIsLoaded(true)
                     setItems(result)
-
-                    items.map((item) => {
-                        if (item.description) {
-                            console.log("Bling bling")
-                            console.log(`Description ${item.description} - Name ${item.name}`)
-                        } else {
-                            console.log("Não tem")
-                            console.log(item.name)
-                        }
-
-                        console.log("-------------")
-                    })
                 },
                 (error) => {
                     setIsLoaded(true)
