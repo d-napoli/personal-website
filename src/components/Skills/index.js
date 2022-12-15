@@ -3,7 +3,7 @@ import React from 'react'
 import Card from '../Card'
 import NewSection from '../NewSection'
 
-import PROGRAMING_LANGUAGES from '../../constants/programmingLanguages'
+import programing_languages from '../../constants/programmingLanguages'
 
 import {
     Container,
@@ -22,7 +22,7 @@ function Skills(props) {
 
             <Row>
                 {
-                    PROGRAMING_LANGUAGES.programing_languages.map((language, index) =>
+                    programing_languages.map((language, index) =>
                         <Column>
                             <Card
                                 icon={language.icon}

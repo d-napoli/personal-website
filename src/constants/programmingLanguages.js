@@ -9,4 +9,4 @@ const programing_languages = [
     { id: 5, icon: CSS, name: 'CSS', beginYear: 2015 }
 ]
 
-export default { programing_languages }
+export default programing_languages
