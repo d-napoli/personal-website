@@ -58,7 +58,6 @@ function LatestProjects(props) {
                 {
                     error ? <p>{error}</p> :
                         isLoaded ?
-                            // <p>Ola mundo</p>
                             items.map(item => (
                                 <Column>
                                     <ProjectCard
@@ -68,7 +67,7 @@ function LatestProjects(props) {
                                         title={item.name.replace("-", " ")}
                                         tech={item.language}
                                         desc={item.description}
-                                        date={Moment(item.created_at).format(props.selectedLanguage == "pt" ? "DD/MM/YYYY" : "MM/DD/YYYY")}
+                                        date={Moment(item.created_at).format(props.selectedLanguage === "pt" ? "DD/MM/YYYY" : "MM/DD/YYYY")}
                                     />
                                 </Column>
                             ))

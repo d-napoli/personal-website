@@ -13,10 +13,10 @@ import WorkingExperience from './components/WorkingExperience'
 import LatestProjects from './components/LatestProjects'
 
 function App() {
-  useEffect(() => {      
+  useEffect(() => {
     let userLang = detectBrowserLanguage() // detec the current user default lang
 
-    if(userLang.includes("pt")) { // if its portuguese
+    if (userLang.includes("pt")) { // if its portuguese
       changeSelectedLanguage("pt")
       changeAnotherLanguage("en")
     } else {
@@ -33,7 +33,7 @@ function App() {
     let newLang = "en"
     let anotherLang = "pt"
 
-    if(selectedLanguage == "en") {
+    if (selectedLanguage === "en") {
       newLang = "pt"
       anotherLang = "en"
     }

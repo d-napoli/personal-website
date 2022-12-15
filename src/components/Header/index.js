@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { LazyLoadComponent } from 'react-lazy-load-image-component';
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 import {
     Container,

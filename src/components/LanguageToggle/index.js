@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 
 import {
     Container,
@@ -14,7 +14,7 @@ import USAFlag from '../../assets/images/Icons/Flags/Usa-Flag.png'
 import BrazilFlag from '../../assets/images/Icons/Flags/Brazil-Flag.png'
 
 function LanguageToggle(props) {
-    const [show, handleShow] = useState(false)   
+    const [show, handleShow] = useState(false)
 
     function changeLanguageHandler() {
         handleToggle();
