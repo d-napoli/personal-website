@@ -28,7 +28,7 @@ export const Row = styled.div`
 export const Tag = styled.div`
     background-color: var(--primary);
     
-    width: 120px;
+    width: 180px;
 
     text-align: center;
     padding: 10px;

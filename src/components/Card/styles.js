@@ -35,5 +35,5 @@ export const Description = styled.p`
 `;
 
 export const CodingLogo = styled.img`
-    width: 50px;
+    width: 70px;
 `;

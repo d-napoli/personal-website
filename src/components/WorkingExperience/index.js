@@ -2,7 +2,7 @@ import React from 'react'
 
 import NewSection from '../NewSection'
 
-import { Vale, Fastway, Attest } from '../../constants/images'
+import { Vale, Fastway, Attest, Buser } from '../../constants/images'
 
 import {
     Container,
@@ -20,6 +20,12 @@ function WorkingExperience(props) {
                 completeDescription={props.lang[props.selectedLanguage]['sections']['professional_experience']['completeDescription']}
             />
             <Row>
+                <Column>
+                    <CompanyImage
+                        src={Buser}
+                        alt="Buser Brasil"
+                    />
+                </Column>
                 <Column>
                     <CompanyImage
                         src={Vale}

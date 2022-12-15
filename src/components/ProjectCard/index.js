@@ -27,20 +27,25 @@ function ProjectCard(props) {
         <Container>
             <Row>
                 <ProjectWrapper>
-                    <CategoryWrapper>
-                        <CategoryDesc>{props.tech}</CategoryDesc>
-                    </CategoryWrapper>
+                    {
+                        props.tech ? <CategoryWrapper>
+                            <CategoryDesc>{props.tech}</CategoryDesc>
+                        </CategoryWrapper>
+                            : null
+                    }
                     <BodyWrapper>
                         <Title>{
                             props.title.length >= title_limit ?
-                            props.title.substring(0, title_limit) + "..." :
-                            props.title
+                                props.title.substring(0, title_limit) + "..." :
+                                props.title
                         }</Title>
                         <Description>
                             {
-                                props.desc.length >= desc_limit ?
-                                props.desc.substring(0, desc_limit) + "..." :
-                                props.desc
+                                props.desc ?
+                                    props.desc.length >= desc_limit ?
+                                        props.desc.substring(0, desc_limit) + "..." :
+                                        props.desc
+                                    : null
                             }
                         </Description>
                         <ProjectDateWrapper>

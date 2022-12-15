@@ -22,7 +22,7 @@ function Skills(props) {
 
             <Row>
                 {
-                    PROGRAMING_LANGUAGES.programing_languages.map((language, index) =>    
+                    PROGRAMING_LANGUAGES.programing_languages.map((language, index) =>
                         <Column>
                             <Card
                                 icon={language.icon}
@@ -30,7 +30,6 @@ function Skills(props) {
                                 selectedLanguage={props.selectedLanguage}
                                 codingLanguage={language.name}
                                 beginYear={new Date().getFullYear() - language.beginYear}
-                                description={props.lang[props.selectedLanguage]['sections']['skills']['programing_languages'][language.name]}
                             />
                         </Column>
                     )

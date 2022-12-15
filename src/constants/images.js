@@ -10,6 +10,7 @@ import CSS from '../assets/images/Icons/Programing-Languages/CSS.png'
 import Vale from '../assets/images/Companies/Vale.png'
 import Fastway from '../assets/images/Companies/Fastway.png'
 import Attest from '../assets/images/Companies/Attest.png'
+import Buser from '../assets/images/Companies/Buser.png'
 
 // Backgrounds
 import Wave from '../assets/images/Background/header-wave-background.png'
@@ -24,5 +25,6 @@ export {
     Vale,
     Fastway,
     Attest,
+    Buser,
     Wave
 }

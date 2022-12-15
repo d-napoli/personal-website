@@ -9,7 +9,7 @@ export const Container = styled.div`
     color: black;
 
     @media screen and (min-width: 1100px) {
-        height: auto;
+        height: 100%;
     }
 
     &:hover {

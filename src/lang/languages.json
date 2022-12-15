@@ -3,7 +3,7 @@
         "pt": {
             "header": {
                 "introduction": {
-                    "tag": "Desenvolvedor",
+                    "tag": "Desenvolvedor Full Stack",
                     "main_phrase": "Olá, sou o",
                     "main_description": "É um prazer te conhecer! Tenho $$AGE$$ anos de idade.",
                     "last_description": "Lorem Ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -59,7 +59,7 @@
         "en": {
             "header": {
                 "introduction": {
-                    "tag": "Developer",
+                    "tag": "Full Stack Engineer",
                     "main_phrase": "Hey, I'm",
                     "main_description": "Nice to meet you! I'm currently $$AGE$$ years old.",
                     "last_description": "Lorem Ipsum dolor sit amet, consectetur adipiscing elit.",

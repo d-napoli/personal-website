@@ -11,7 +11,6 @@ import {
     PrimaryColor,
     MainDesc,
     SecondDesc,
-    ProfileImage,
     LanguageWrapper,
     IconWrapper,
     BackgroundHeader,
@@ -20,9 +19,7 @@ import {
 } from './styles'
 
 import LanguageToggle from '../LanguageToggle'
-import ProfileImageUrl from '../../assets/images/Profile/Hackathon-Espirito-Santo.png'
 import Icon from '../Icon'
-import Button from '../Button'
 import CodingTemplate from '../CodingTemplate'
 
 import { ICONS } from '../../constants/icons'
@@ -42,15 +39,15 @@ function Header(props) {
         var birthDate = new Date("02/04/2000"); // month, day, year
         var age_now = today.getFullYear() - birthDate.getFullYear();
         var m = today.getMonth() - birthDate.getMonth();
-    
-        if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) 
+
+        if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate()))
             age_now--;
 
         changeAge(age_now)
     }
 
     function handleScroll() {
-        if(document.documentElement.scrollTop > 300) {
+        if (document.documentElement.scrollTop > 300) {
             changeBackToTop(true)
         } else {
             changeBackToTop(false)
@@ -60,20 +57,30 @@ function Header(props) {
     return (
         <Container id="header">
             {
-                backToTop ? 
-                <Link
-                    to='header'
-                    smooth={true}
-                    offset={-70}
-                    duration={300}
-                >
-                    <BackToTopWrapper>
-                        <BackToTop>
-                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="3em" width="3em" xmlns="http://www.w3.org/2000/svg"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path></svg>
-                        </BackToTop>
-                    </BackToTopWrapper>
-                </Link>
-                : ""
+                backToTop ?
+                    <Link
+                        to='header'
+                        smooth={true}
+                        offset={-70}
+                        duration={300}
+                    >
+                        <BackToTopWrapper>
+                            <BackToTop>
+                                <svg
+                                    stroke="currentColor"
+                                    fill="currentColor"
+                                    stroke-width="0"
+                                    viewBox="0 0 24 24"
+                                    height="3em"
+                                    width="3em"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path>
+                                </svg>
+                            </BackToTop>
+                        </BackToTopWrapper>
+                    </Link>
+                    : ""
             }
 
             <LazyLoadComponent>
@@ -127,11 +134,16 @@ function Header(props) {
                                 size="30"
                             />
                         </IconWrapper>
-                        <Button
-                            icon={ICONS.DOWNLOAD}
-                            text={props.lang[props.selectedLanguage]['header']['introduction']['curriculum']}
-                            passou="Sim"
-                        />
+                        <IconWrapper
+                            href="https://www.youtube.com/channel/UCtsVf511Jq1nMQ8r0-u84BQ"
+                            target="_blank"
+                        >
+                            <Icon
+                                icon={ICONS.YOUTUBE}
+                                color="#fff"
+                                size="30"
+                            />
+                        </IconWrapper>
                     </Row>
                 </Column>
                 <Column>
@@ -142,7 +154,6 @@ function Header(props) {
                             lang={props.lang}
                         />
                     </LazyLoadComponent>
-                    {/* <ProfileImage src={ProfileImageUrl} /> */}
                 </Column>
             </Row>
             {/* Social Icons */}

@@ -27,6 +27,18 @@ function LatestProjects(props) {
                     console.log(result)
                     setIsLoaded(true)
                     setItems(result)
+
+                    items.map((item) => {
+                        if (item.description) {
+                            console.log("Bling bling")
+                            console.log(`Description ${item.description} - Name ${item.name}`)
+                        } else {
+                            console.log("Não tem")
+                            console.log(item.name)
+                        }
+
+                        console.log("-------------")
+                    })
                 },
                 (error) => {
                     setIsLoaded(true)
@@ -46,6 +58,7 @@ function LatestProjects(props) {
                 {
                     error ? <p>{error}</p> :
                         isLoaded ?
+                            // <p>Ola mundo</p>
                             items.map(item => (
                                 <Column>
                                     <ProjectCard
@@ -56,13 +69,13 @@ function LatestProjects(props) {
                                         tech={item.language}
                                         desc={item.description}
                                         date={Moment(item.created_at).format(props.selectedLanguage == "pt" ? "DD/MM/YYYY" : "MM/DD/YYYY")}
-                                    />       
+                                    />
                                 </Column>
                             ))
-                        :
-                        <LoaderWrapper>
-                            <Loader color="#FFF" size={40} />
-                        </LoaderWrapper>
+                            :
+                            <LoaderWrapper>
+                                <Loader color="#FFF" size={40} />
+                            </LoaderWrapper>
                 }
             </Row>
         </Container>
